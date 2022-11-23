@@ -60,7 +60,7 @@ function App() {
     }
 
     console.log(payload)
-    axios.post('http://localhost:5000/api/data', payload)
+    axios.post('https://apiradar.herokuapp.com/api/data', payload)
       .then(function (response) {
         console.log(response)
         if (response.status === 200) {

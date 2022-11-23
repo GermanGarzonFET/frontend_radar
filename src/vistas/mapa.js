@@ -14,7 +14,7 @@ const icon = new Icon({
 
 export default function App() {
   const url =
-    "http://localhost:5000/api/data";
+    "https://apiradar.herokuapp.com/api/data";
   const { data, error } = useSwr(url, fetcher);
   const personas = data && !error ? data.slice(0, 10) : [];
   const [posicionPersona, setPosicionPersona] = React.useState(null);
